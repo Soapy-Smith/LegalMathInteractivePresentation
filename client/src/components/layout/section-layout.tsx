@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { Card } from "@/components/ui/card";
-import { Navigation } from "../nav/navigation";
 import { TableOfContents } from "../nav/table-of-contents";
 
 interface SectionLayoutProps {
@@ -12,7 +11,6 @@ interface SectionLayoutProps {
 export const SectionLayout = ({ children, title, description }: SectionLayoutProps) => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navigation />
       <main className="max-w-screen-xl mx-auto p-4">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1">
