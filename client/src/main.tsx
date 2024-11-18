@@ -11,18 +11,57 @@ import MathematicalMisconceptions from "./pages/sections/misconceptions";
 import MathematicalTools from "./pages/sections/tools";
 import AdvancedApplications from "./pages/sections/advanced";
 
+// Import subsection components
+import Convergence from "./pages/sections/introduction/convergence";
+import Imperative from "./pages/sections/introduction/imperative";
+import StatisticalFundamentals from "./pages/sections/statistical-literacy/fundamentals";
+import StatisticalCaseStudies from "./pages/sections/statistical-literacy/case-studies";
+import TimeValue from "./pages/sections/financial-calculations/time-value";
+import CompoundInterest from "./pages/sections/financial-calculations/compound-interest";
+import ProsecutorsFallacy from "./pages/sections/misconceptions/prosecutors-fallacy";
+import IndependenceAssumption from "./pages/sections/misconceptions/independence-assumption";
+import Spreadsheets from "./pages/sections/tools/spreadsheets";
+import StatisticalSoftware from "./pages/sections/tools/statistical-software";
+import Regression from "./pages/sections/advanced/regression";
+import DecisionTheory from "./pages/sections/advanced/decision-theory";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <SWRConfig value={{ fetcher }}>
       <Switch>
         <Route path="/" component={App} />
+        
+        {/* Introduction routes */}
+        <Route path="/convergence" component={Convergence} />
+        <Route path="/imperative" component={Imperative} />
+        
+        {/* Statistical Literacy routes */}
         <Route path="/statistical-literacy" component={StatisticalLiteracy} />
+        <Route path="/statistical-literacy/fundamentals" component={StatisticalFundamentals} />
+        <Route path="/statistical-literacy/case-studies" component={StatisticalCaseStudies} />
+        
+        {/* Financial Calculations routes */}
         <Route path="/financial-calculations" component={FinancialCalculations} />
+        <Route path="/financial-calculations/time-value" component={TimeValue} />
+        <Route path="/financial-calculations/compound-interest" component={CompoundInterest} />
+        
+        {/* Misconceptions routes */}
         <Route path="/misconceptions" component={MathematicalMisconceptions} />
+        <Route path="/misconceptions/prosecutors-fallacy" component={ProsecutorsFallacy} />
+        <Route path="/misconceptions/independence-assumption" component={IndependenceAssumption} />
+        
+        {/* Tools routes */}
         <Route path="/tools" component={MathematicalTools} />
+        <Route path="/tools/spreadsheets" component={Spreadsheets} />
+        <Route path="/tools/statistical-software" component={StatisticalSoftware} />
+        
+        {/* Advanced routes */}
         <Route path="/advanced" component={AdvancedApplications} />
+        <Route path="/advanced/regression" component={Regression} />
+        <Route path="/advanced/decision-theory" component={DecisionTheory} />
+        
         <Route>404 Page Not Found</Route>
       </Switch>
     </SWRConfig>
-  </StrictMode>,
+  </StrictMode>
 );
