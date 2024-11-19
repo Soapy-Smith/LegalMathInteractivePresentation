@@ -17,7 +17,7 @@ export const SectionLayout = ({ children, title, description }: SectionLayoutPro
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <img
-                src="/images/Picture2.png"
+                src="/images/Picture2.jpg"
                 alt="Sanders Pianowski LLP Logo"
                 className="h-12 w-auto"
                 onError={(e) => {
