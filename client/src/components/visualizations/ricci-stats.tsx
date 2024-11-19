@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, Cell } from 'recharts';
 
 const RicciStats = () => {
   // Pass rates data
@@ -84,11 +84,7 @@ const RicciStats = () => {
                     formatter={(value, name, props) => [`${props.payload.actual}`, 'Actual Ratio']}
                   />
                   <ReferenceLine y={80} stroke="red" label="80% Threshold" strokeDasharray="3 3" />
-                  <Bar 
-                    dataKey="ratio" 
-                    fill="#8884d8"
-                    isAnimationActive={true}
-                  >
+                  <Bar dataKey="ratio" fill="#8884d8">
                     {fourFifthsData.map((entry, index) => (
                       <Cell 
                         key={`cell-${index}`}
