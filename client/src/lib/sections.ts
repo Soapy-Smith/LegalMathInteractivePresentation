@@ -24,6 +24,12 @@ export const sections: Section[] = [
         title: "The Imperative for Mathematical Literacy",
         description: "Why mathematical literacy matters in law",
         path: "/imperative"
+      },
+      {
+        id: "hesitation",
+        title: "Mathematical Hesitation in Legal Practice",
+        description: "Understanding and addressing the legal profession's reluctance toward mathematics",
+        path: "/hesitation"
       }
     ]
   },

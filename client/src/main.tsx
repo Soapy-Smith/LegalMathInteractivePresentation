@@ -14,6 +14,7 @@ import AdvancedApplications from "./pages/sections/advanced";
 // Import subsection components
 import Convergence from "./pages/sections/introduction/convergence";
 import Imperative from "./pages/sections/introduction/imperative";
+import Hesitation from "./pages/sections/introduction/hesitation";
 import StatisticalFundamentals from "./pages/sections/statistical-literacy/fundamentals";
 import StatisticalCaseStudies from "./pages/sections/statistical-literacy/case-studies";
 import TimeValue from "./pages/sections/financial-calculations/time-value";
@@ -39,6 +40,7 @@ createRoot(document.getElementById("root")!).render(
         {/* Introduction routes */}
         <Route path="/convergence" component={Convergence} />
         <Route path="/imperative" component={Imperative} />
+        <Route path="/hesitation" component={Hesitation} />
         
         {/* Statistical Literacy routes */}
         <Route path="/statistical-literacy" component={StatisticalLiteracy} />
