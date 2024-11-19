@@ -16,12 +16,17 @@ export const SectionLayout = ({ children, title, description }: SectionLayoutPro
         <div className="max-w-screen-xl mx-auto p-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              {/* Sanders Pianowski LLP Logo */}
               <img
-                src="/Picture2.png"
+                src="/logo.svg"
                 alt="Sanders Pianowski LLP"
                 className="h-12 w-auto"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.alt = "Sanders Pianowski LLP";
+                  e.currentTarget.style.display = "none";
+                }}
               />
+              <span className="text-xl font-semibold text-primary">Sanders Pianowski LLP</span>
             </div>
           </div>
         </div>
