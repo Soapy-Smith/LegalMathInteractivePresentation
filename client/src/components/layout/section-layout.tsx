@@ -26,11 +26,8 @@ export const SectionLayout = ({ children, title, description }: SectionLayoutPro
                   e.currentTarget.style.display = "none";
                 }}
               />
-              <span className="text-xl font-semibold text-primary hidden sm:inline">
-                Legal Solutions... Done Right
-              </span>
-            </div>
-          </div>
+
+        
         </div>
       </header>
 
