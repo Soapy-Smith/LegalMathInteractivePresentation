@@ -10,8 +10,25 @@ interface SectionLayoutProps {
 
 export const SectionLayout = ({ children, title, description }: SectionLayoutProps) => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <main className="max-w-screen-xl mx-auto p-4">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      {/* Header with Logo */}
+      <header className="bg-white border-b">
+        <div className="max-w-screen-xl mx-auto p-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              {/* Sanders Pianowski LLP Logo */}
+              <img
+                src="/Picture2.png"
+                alt="Sanders Pianowski LLP"
+                className="h-12 w-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="flex-1 max-w-screen-xl mx-auto p-4">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1">
             <TableOfContents />
@@ -27,6 +44,17 @@ export const SectionLayout = ({ children, title, description }: SectionLayoutPro
           </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t mt-8">
+        <div className="max-w-screen-xl mx-auto p-4">
+          <div className="text-center text-gray-600">
+            <p className="text-sm">
+              © 2024 Sanders Pianowski LLP. All rights reserved. Legal Solutions... Done Right.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
