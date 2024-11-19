@@ -60,6 +60,21 @@ const App = () => {
             </motion.h1>
           </div>
 
+          {/* Presenter Information - Moved between title and formulas */}
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <p className="text-xl font-serif text-primary mb-4">
+              Presented by
+            </p>
+            <h2 className="text-3xl font-serif font-bold text-primary">
+              Garrick T. Lankford
+            </h2>
+          </motion.div>
+
           {/* Mathematical Formulas */}
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-2 gap-8 opacity-15 text-primary mx-auto max-w-4xl my-12"
@@ -102,21 +117,6 @@ const App = () => {
                 E
               </span>
             </div>
-          </motion.div>
-
-          {/* Presenter Information */}
-          <motion.div 
-            className="text-center mt-24"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <p className="text-xl font-serif text-primary mb-4">
-              Presented by
-            </p>
-            <h2 className="text-3xl font-serif font-bold text-primary mb-16">
-              Garrick T. Lankford
-            </h2>
           </motion.div>
 
           {/* Bottom Decorative Lines */}
