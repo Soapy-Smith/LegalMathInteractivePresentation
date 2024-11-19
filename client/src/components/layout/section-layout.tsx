@@ -17,8 +17,8 @@ export const SectionLayout = ({ children, title, description }: SectionLayoutPro
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <img
-                src="/logo.svg"
-                alt="Sanders Pianowski LLP"
+                src="/images/Picture2.png"
+                alt="Sanders Pianowski LLP Logo"
                 className="h-12 w-auto"
                 onError={(e) => {
                   e.currentTarget.onerror = null;
@@ -26,7 +26,9 @@ export const SectionLayout = ({ children, title, description }: SectionLayoutPro
                   e.currentTarget.style.display = "none";
                 }}
               />
-              <span className="text-xl font-semibold text-primary">Sanders Pianowski LLP</span>
+              <span className="text-xl font-semibold text-primary hidden sm:inline">
+                Legal Solutions... Done Right
+              </span>
             </div>
           </div>
         </div>
