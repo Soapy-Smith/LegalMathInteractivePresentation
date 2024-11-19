@@ -28,6 +28,44 @@ export const sections: Section[] = [
     ]
   },
   {
+    id: "misconceptions",
+    title: "Mathematical Misconceptions",
+    description: "Common mathematical errors in legal practice",
+    path: "/misconceptions",
+    subSections: [
+      {
+        id: "percentage-calculations",
+        title: "Percentage Calculations in Law",
+        description: "Understanding and avoiding percentage calculation errors",
+        path: "/misconceptions/percentage-calculations"
+      },
+      {
+        id: "compound-interest-misconceptions",
+        title: "Compound Interest Misconceptions",
+        description: "Common errors in compound interest calculations",
+        path: "/misconceptions/compound-interest-misconceptions"
+      },
+      {
+        id: "present-value-misconceptions",
+        title: "Present Value Calculation Errors",
+        description: "Avoiding mistakes in present value calculations",
+        path: "/misconceptions/present-value-misconceptions"
+      },
+      {
+        id: "prosecutors-fallacy",
+        title: "The Prosecutor's Fallacy",
+        description: "Understanding statistical fallacies in legal reasoning",
+        path: "/misconceptions/prosecutors-fallacy"
+      },
+      {
+        id: "independence-assumption",
+        title: "Independence Assumption",
+        description: "Errors in assuming event independence",
+        path: "/misconceptions/independence-assumption"
+      }
+    ]
+  },
+  {
     id: "statistical-literacy",
     title: "Statistical Literacy in Legal Contexts",
     description: "Understanding statistical analysis in legal cases",
@@ -76,44 +114,6 @@ export const sections: Section[] = [
         title: "Financial Case Studies",
         description: "Analysis of significant financial law cases",
         path: "/financial-calculations/case-studies"
-      }
-    ]
-  },
-  {
-    id: "misconceptions",
-    title: "Mathematical Misconceptions",
-    description: "Common mathematical errors in legal practice",
-    path: "/misconceptions",
-    subSections: [
-      {
-        id: "percentage-calculations",
-        title: "Percentage Calculations in Law",
-        description: "Understanding and avoiding percentage calculation errors",
-        path: "/misconceptions/percentage-calculations"
-      },
-      {
-        id: "compound-interest-misconceptions",
-        title: "Compound Interest Misconceptions",
-        description: "Common errors in compound interest calculations",
-        path: "/misconceptions/compound-interest-misconceptions"
-      },
-      {
-        id: "present-value-misconceptions",
-        title: "Present Value Calculation Errors",
-        description: "Avoiding mistakes in present value calculations",
-        path: "/misconceptions/present-value-misconceptions"
-      },
-      {
-        id: "prosecutors-fallacy",
-        title: "The Prosecutor's Fallacy",
-        description: "Understanding statistical fallacies in legal reasoning",
-        path: "/misconceptions/prosecutors-fallacy"
-      },
-      {
-        id: "independence-assumption",
-        title: "Independence Assumption",
-        description: "Errors in assuming event independence",
-        path: "/misconceptions/independence-assumption"
       }
     ]
   },
