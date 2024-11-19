@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { CaseStudies, type CaseStudy } from "@/components/case-studies/case-study";
 import SallyClarkStats from "@/components/visualizations/sally-clark-stats";
+import RicciStats from "@/components/visualizations/ricci-stats";
 
 const caseStudies: CaseStudy[] = [
   {
@@ -11,6 +12,13 @@ const caseStudies: CaseStudy[] = [
     details: "Sally Clark, a British solicitor, was wrongfully convicted in 1999 for the murder of her two infant sons. The prosecution's case heavily relied on statistical evidence presented by Professor Sir Roy Meadow, who made a fundamental error in probability calculation.",
     impact: "The case led to significant reforms in how statistical evidence is presented in court and highlighted the importance of proper statistical understanding in legal proceedings.",
     visualization: <SallyClarkStats />
+  },
+  {
+    title: "Ricci v. DeStefano (2009)",
+    description: "Statistical analysis in employment discrimination",
+    details: "The City of New Haven faced a legal challenge after discarding promotional exam results for firefighters due to racial disparities. The test results showed significant differences in pass rates: White candidates (58%), Black candidates (32%), and Hispanic candidates (20%).",
+    impact: "The Supreme Court's 5-4 decision established that employers must have a 'strong basis in evidence' before taking race-conscious actions to avoid disparate-impact liability, significantly affecting employment law and affirmative action policies.",
+    visualization: <RicciStats />
   },
   {
     title: "McCleskey v. Kemp (1987)",
