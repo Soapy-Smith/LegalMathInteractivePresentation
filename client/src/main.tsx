@@ -18,6 +18,11 @@ import StatisticalFundamentals from "./pages/sections/statistical-literacy/funda
 import StatisticalCaseStudies from "./pages/sections/statistical-literacy/case-studies";
 import TimeValue from "./pages/sections/financial-calculations/time-value";
 import CompoundInterest from "./pages/sections/financial-calculations/compound-interest";
+import PresentValue from "./pages/sections/financial-calculations/present-value";
+import FinancialCaseStudies from "./pages/sections/financial-calculations/case-studies";
+import PercentageCalculations from "./pages/sections/misconceptions/percentage-calculations";
+import CompoundInterestMisconceptions from "./pages/sections/misconceptions/compound-interest-misconceptions";
+import PresentValueMisconceptions from "./pages/sections/misconceptions/present-value-misconceptions";
 import ProsecutorsFallacy from "./pages/sections/misconceptions/prosecutors-fallacy";
 import IndependenceAssumption from "./pages/sections/misconceptions/independence-assumption";
 import Spreadsheets from "./pages/sections/tools/spreadsheets";
@@ -43,10 +48,15 @@ createRoot(document.getElementById("root")!).render(
         {/* Financial Calculations routes */}
         <Route path="/financial-calculations" component={FinancialCalculations} />
         <Route path="/financial-calculations/time-value" component={TimeValue} />
+        <Route path="/financial-calculations/present-value" component={PresentValue} />
         <Route path="/financial-calculations/compound-interest" component={CompoundInterest} />
+        <Route path="/financial-calculations/case-studies" component={FinancialCaseStudies} />
         
         {/* Misconceptions routes */}
         <Route path="/misconceptions" component={MathematicalMisconceptions} />
+        <Route path="/misconceptions/percentage-calculations" component={PercentageCalculations} />
+        <Route path="/misconceptions/compound-interest-misconceptions" component={CompoundInterestMisconceptions} />
+        <Route path="/misconceptions/present-value-misconceptions" component={PresentValueMisconceptions} />
         <Route path="/misconceptions/prosecutors-fallacy" component={ProsecutorsFallacy} />
         <Route path="/misconceptions/independence-assumption" component={IndependenceAssumption} />
         

@@ -86,6 +86,24 @@ export const sections: Section[] = [
     path: "/misconceptions",
     subSections: [
       {
+        id: "percentage-calculations",
+        title: "Percentage Calculations in Law",
+        description: "Understanding and avoiding percentage calculation errors",
+        path: "/misconceptions/percentage-calculations"
+      },
+      {
+        id: "compound-interest-misconceptions",
+        title: "Compound Interest Misconceptions",
+        description: "Common errors in compound interest calculations",
+        path: "/misconceptions/compound-interest-misconceptions"
+      },
+      {
+        id: "present-value-misconceptions",
+        title: "Present Value Calculation Errors",
+        description: "Avoiding mistakes in present value calculations",
+        path: "/misconceptions/present-value-misconceptions"
+      },
+      {
         id: "prosecutors-fallacy",
         title: "The Prosecutor's Fallacy",
         description: "Understanding statistical fallacies in legal reasoning",
