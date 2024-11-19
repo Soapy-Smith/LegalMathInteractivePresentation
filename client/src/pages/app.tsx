@@ -38,9 +38,9 @@ const App = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/Picture2.png"
+              src="/images/logo-white.png"
               alt="Sanders Pianowski LLP Logo"
-              className="h-24 w-auto"
+              className="h-24 w-auto dark:invert"
             />
           </motion.div>
 
