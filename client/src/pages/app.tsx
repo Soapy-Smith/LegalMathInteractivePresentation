@@ -30,8 +30,22 @@ const App = () => {
             <div className="h-px bg-primary w-full transform rotate-1 mt-1"></div>
           </div>
 
+          {/* Logo */}
+          <motion.div 
+            className="flex justify-center mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img
+              src="/images/Picture2.png"
+              alt="Sanders Pianowski LLP Logo"
+              className="h-24 w-auto"
+            />
+          </motion.div>
+
           {/* Title Section */}
-          <div className="mt-24 mb-16 text-center">
+          <div className="mt-8 mb-16 text-center">
             <motion.h1 
               className="text-6xl font-serif font-bold text-primary leading-tight"
               initial={{ opacity: 0, y: 20 }}
