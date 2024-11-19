@@ -1,0 +1,25 @@
+flowchart TD
+    A[Issue Identified] --> B{Does Precedent Exist?}
+    B -->|Yes| C[Analyze Precedent Cases]
+    B -->|No| D[Consider Analogous Cases]
+    
+    C --> E{Is Case Distinguished?}
+    E -->|Yes| F[Analyze Distinguishing Factors]
+    E -->|No| G[Apply Precedent Directly]
+    
+    D --> H{Are Cases Analogous?}
+    H -->|Yes| I[Apply Similar Reasoning]
+    H -->|No| J[Develop New Legal Theory]
+    
+    F --> K[Determine New Application]
+    G --> L[Apply Established Rule]
+    I --> K
+    J --> K
+    
+    K --> M{Is Outcome Just?}
+    L --> M
+    
+    M -->|Yes| N[Document Reasoning]
+    M -->|No| O[Consider Policy Implications]
+    O --> P[Refine Analysis]
+    P --> M
