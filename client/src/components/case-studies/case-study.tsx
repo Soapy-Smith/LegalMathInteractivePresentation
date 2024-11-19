@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, ReactNode } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
@@ -8,6 +8,7 @@ export interface CaseStudy {
   description: string;
   details: string;
   impact: string;
+  visualization?: ReactNode;
 }
 
 interface CaseStudyProps {
@@ -42,7 +43,12 @@ export const CaseStudyComponent = ({ study }: CaseStudyProps) => {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-8">
+              {study.visualization && (
+                <div className="visualization-container">
+                  {study.visualization}
+                </div>
+              )}
               <div>
                 <h4 className="font-semibold mb-2">Details</h4>
                 <p className="text-gray-600">{study.details}</p>

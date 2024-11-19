@@ -9,7 +9,8 @@ const caseStudies: CaseStudy[] = [
     title: "Sally Clark Case",
     description: "Statistical fallacies in criminal proceedings",
     details: "Sally Clark, a British solicitor, was wrongfully convicted in 1999 for the murder of her two infant sons. The prosecution's case heavily relied on statistical evidence presented by Professor Sir Roy Meadow, who made a fundamental error in probability calculation.",
-    impact: "The case led to significant reforms in how statistical evidence is presented in court and highlighted the importance of proper statistical understanding in legal proceedings."
+    impact: "The case led to significant reforms in how statistical evidence is presented in court and highlighted the importance of proper statistical understanding in legal proceedings.",
+    visualization: <SallyClarkStats />
   },
   {
     title: "McCleskey v. Kemp (1987)",
@@ -38,8 +39,7 @@ const StatisticalCaseStudies = () => {
           transition={{ duration: 0.5 }}
         >
           <Card>
-            <CardContent className="p-6 space-y-8">
-              <SallyClarkStats />
+            <CardContent className="p-6">
               <CaseStudies studies={caseStudies} />
             </CardContent>
           </Card>
