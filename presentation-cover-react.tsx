@@ -1,4 +1,3 @@
-# test 
 import React from 'react';
 
 const PresentationCover = () => {
