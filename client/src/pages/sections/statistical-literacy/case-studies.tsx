@@ -2,6 +2,7 @@ import { SectionLayout } from "@/components/layout/section-layout";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { CaseStudies, type CaseStudy } from "@/components/case-studies/case-study";
+import SallyClarkStats from "@/components/visualizations/sally-clark-stats";
 
 const caseStudies: CaseStudy[] = [
   {
@@ -37,7 +38,8 @@ const StatisticalCaseStudies = () => {
           transition={{ duration: 0.5 }}
         >
           <Card>
-            <CardContent className="p-6">
+            <CardContent className="p-6 space-y-8">
+              <SallyClarkStats />
               <CaseStudies studies={caseStudies} />
             </CardContent>
           </Card>
