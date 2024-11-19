@@ -56,14 +56,26 @@ export const sections: Section[] = [
       {
         id: "time-value",
         title: "Time Value of Money",
-        description: "Understanding present and future value",
+        description: "Understanding the time value concept in legal settlements",
         path: "/financial-calculations/time-value"
+      },
+      {
+        id: "present-value",
+        title: "Present Value Calculations",
+        description: "Present and future value calculations in legal contexts",
+        path: "/financial-calculations/present-value"
       },
       {
         id: "compound-interest",
         title: "Compound Interest Analysis",
-        description: "Complex interest calculations in legal contexts",
+        description: "Complex interest calculations and legal implications",
         path: "/financial-calculations/compound-interest"
+      },
+      {
+        id: "case-studies",
+        title: "Financial Case Studies",
+        description: "Analysis of significant financial law cases",
+        path: "/financial-calculations/case-studies"
       }
     ]
   },

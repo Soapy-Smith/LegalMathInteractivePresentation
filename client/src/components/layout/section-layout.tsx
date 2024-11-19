@@ -26,9 +26,7 @@ export const SectionLayout = ({ children, title, description }: SectionLayoutPro
                   e.currentTarget.style.display = "none";
                 }}
               />
-              <span className="text-xl font-semibold text-primary hidden sm:inline">
-                Legal Solutions... Done Right
-              </span>
+            
             </div>
           </div>
         </div>
@@ -57,7 +55,7 @@ export const SectionLayout = ({ children, title, description }: SectionLayoutPro
         <div className="max-w-screen-xl mx-auto p-4">
           <div className="text-center text-gray-600">
             <p className="text-sm">
-              © 2024 Sanders Pianowski LLP. All rights reserved. Legal Solutions... Done Right.
+              © 2024 Sanders Pianowski LLP. All rights reserved.
             </p>
           </div>
         </div>
